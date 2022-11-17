@@ -8,9 +8,9 @@ varying  vec3  vE;		// vector from point to eye
 
 vec3 LightPosition = vec3(  0., 5., 5. );
 
-const float AMP = 0.4;
+const float AMP = 1.0;
 const float PI = 3.14159265;
-const float W = 3.;
+const float W = 4.;
 
 /*
 varying vec2  	vST;		// texture coords

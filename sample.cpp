@@ -500,7 +500,7 @@ Display( )
 	S0 = 0.5f;
 	T0 = 0.5f;
 	float Ds = 0.4f;
-	float Dt = 0.2f;
+	//float Dt = 0.2f;
 	Pattern->Use();
 	Pattern->SetUniformVariable("uKa", 0.1f);
 	Pattern->SetUniformVariable("uKd", 0.6f);
@@ -515,7 +515,7 @@ Display( )
 	if (fragAnimation)
 	{
 		Pattern->SetUniformVariable("uDs", Ds * (float)(.5 + .5 * sin(2. * M_PI * Time)));
-		Pattern->SetUniformVariable("uDt", Dt * (float)(.5 + .5 * cos(2. * M_PI * Time)));
+		//Pattern->SetUniformVariable("uDt", Dt * (float)(.5 + .5 * cos(2. * M_PI * Time)));
 	}
 
 	if (vertAnimation)

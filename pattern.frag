@@ -27,8 +27,7 @@ main( )
 	vec3 Eye    = normalize(vE);
 
 	vec3 myColor = uColor;
-	if(	uS0-uDs/2. <= vST.s  &&  vST.s <= uS0+uDs/2.  && 
-		uT0-uDt/2. <= vST.t  &&  vST.t <= uT0+uDt/2.  )
+	if(	(uDs + 0.1) >= vST.s && (uDs - 0.1) <= vST.s )
 	{
 			myColor = vec3( 1., 0.1, 0.7 );
 	}
